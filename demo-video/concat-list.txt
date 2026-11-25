@@ -1,0 +1,6 @@
+file '/home/hatch/workspace/goals/terminal-3-micro-grant/escrowlens/demo-video/narration/seg1.mp3'
+file '/home/hatch/workspace/goals/terminal-3-micro-grant/escrowlens/demo-video/narration/seg2.mp3'
+file '/home/hatch/workspace/goals/terminal-3-micro-grant/escrowlens/demo-video/narration/seg3.mp3'
+file '/home/hatch/workspace/goals/terminal-3-micro-grant/escrowlens/demo-video/narration/seg4.mp3'
+file '/home/hatch/workspace/goals/terminal-3-micro-grant/escrowlens/demo-video/narration/seg5.mp3'
+file '/home/hatch/workspace/goals/terminal-3-micro-grant/escrowlens/demo-video/narration/seg6.mp3'

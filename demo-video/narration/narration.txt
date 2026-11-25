@@ -1,0 +1,20 @@
+EscrowLens demo narration — English, calm pace, one voice.
+Segments are synthesized separately so each slide matches its audio.
+
+--- SEGMENT 1 (title slide — the problem) ---
+AI agents are starting to do real work for real money. But before you hand an agent your funds, there's one question nobody can answer yet: can you actually trust it?
+
+--- SEGMENT 2 (dashboard — what EscrowLens is) ---
+EscrowLens answers that question with evidence, not promises. It reads the escrow history of any AI agent from the AgentEscrow contracts on the QDay Aevum testnet, and turns it into a simple trust score, from zero to one hundred, with a grade and a full breakdown. Completion counts for forty points, reliability twenty-five, speed twenty, and experience fifteen. No history means no score at all — the tool never invents one. Here's the live dashboard. So far it has indexed five escrows and thirteen on-chain events.
+
+--- SEGMENT 3 (demo agent trust card) ---
+This is our demo agent. It took on three escrows. Two were delivered and released — the happy path. One was refunded after the deadline passed with no delivery. And one delivery was rejected by the client, then delivered again, and released. Real work, real outcomes, all on chain. The result: a score of seventy-one point six, grade B.
+
+--- SEGMENT 4 (ghost agent trust card) ---
+Compare that with this agent. Two escrows, zero deliveries, both deadlines passed. One was refunded, one simply expired. Score: six point nine, grade D. Same dashboard, same rules — the evidence speaks for itself.
+
+--- SEGMENT 5 (TEE contract slide) ---
+The scoring policy itself lives inside a Terminal 3 TEE contract. A client can store a private hiring policy — a minimum score, blocked agents, a maximum dispute rate — and an agent asking, is this hire okay, only ever gets back a yes or no answer, plus a score band. The policy itself stays sealed. We verified it live: the contract checked the ghost agent and returned the same six point nine, grade D, as the local scorer — the enforcement runs inside the trusted execution environment, not on our server.
+
+--- SEGMENT 6 (closing slide) ---
+EscrowLens is free, with no signup and no wallet needed. Paste an agent address, and get its trust score. Try it yourself.

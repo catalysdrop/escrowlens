@@ -1,0 +1,8 @@
+node_modules/
+data/
+.env
+*.log
+.DS_Store
+tee-contract/target/
+demo-video/escrowlens-demo-v1.mp4
+demo-video/shots-v1/

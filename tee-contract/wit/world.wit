@@ -1,0 +1,33 @@
+package z:escrow-trust@0.1.0;
+
+// tenant-base only: no HTTP, so a sealed hiring policy can never leave
+// the enclave through this contract.
+world escrow-trust {
+
+  import host:tenant/tenant-context@2.0.0;
+
+  import host:interfaces/logging@2.4.0;
+
+  import host:interfaces/kv-store@2.4.0;
+
+  export contracts;
+
+}
+
+interface contracts {
+
+  // Uniform 3-field envelope used by every node-callable contract.
+  //   input        — JSON arguments for this function, as bytes
+  //   user-profile — None for tenant contracts (profile is resolved host-side)
+  //   context      — node-minted DynamicContext (trusted), as bytes
+  record generic-input {
+    input:        option<list<u8>>,
+    user-profile: option<list<u8>>,
+    context:      option<list<u8>>,
+  }
+
+  store:  func(req: generic-input) -> result<list<u8>, string>;
+  check:  func(req: generic-input) -> result<list<u8>, string>;
+  forget: func(req: generic-input) -> result<list<u8>, string>;
+
+}

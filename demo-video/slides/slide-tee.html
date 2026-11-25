@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1920px; height: 1080px; background: #0F2040; color: #fff;
+    font-family: system-ui, -apple-system, sans-serif; display: flex; flex-direction: column;
+    justify-content: center; padding: 0 160px; }
+  .kicker { color: #0E9A8B; font-size: 32px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; }
+  h1 { font-size: 72px; line-height: 1.15; font-weight: 800; margin-bottom: 48px; }
+  .row { display: flex; gap: 28px; margin-bottom: 26px; align-items: flex-start; }
+  .dot { width: 18px; height: 18px; border-radius: 50%; background: #0E9A8B; margin-top: 14px; flex: none; }
+  .row p { font-size: 38px; line-height: 1.35; color: #dbe4ef; }
+  .row p b { color: #fff; }
+  code { font-family: ui-monospace, monospace; font-size: 32px; background: #1a3358; padding: 4px 12px; border-radius: 8px; color: #7fe0d2; }
+  .verdict { margin-top: 40px; font-size: 40px; color: #7fe0d2; font-weight: 700; }
+</style></head>
+<body>
+  <div class="kicker">Scoring policy — sealed, not on our server</div>
+  <h1>Enforced inside a Terminal 3<br>TEE contract</h1>
+  <div class="row"><div class="dot"></div><p>Contract <code>z:11d4bb95…:escrow-trust</code> · id <b>1150</b> · v0.1.0</p></div>
+  <div class="row"><div class="dot"></div><p>Private hiring policy in map <code>trust-policies</code> — only the contract can read or write it</p></div>
+  <div class="row"><div class="dot"></div><p>Policy stored: <b>min score 60</b> · max dispute rate <b>20%</b> · delivery required</p></div>
+  <div class="row"><div class="dot"></div><p>An agent asking “is this hire OK?” gets back <b>yes / no + a score band</b> — never the policy</p></div>
+  <div class="verdict">Verified live: ghost agent → 6.9 / D, acceptable: no — identical to the local scorer.</div>
+</body>
+</html>
